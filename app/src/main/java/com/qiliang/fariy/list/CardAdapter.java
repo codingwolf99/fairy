@@ -87,7 +87,8 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.CardViewHolder
     public void onBindViewHolder(@NonNull CardViewHolder holder, int position) {
         DataItem currentItem = cardItemList.get(position);
 
-        Picasso.get().load(currentItem.getImage()).into(holder.imageViewImage);
+        Picasso.get().load(currentItem.getImage()).fit()
+                .transform(new RoundedCornersTransformation(16, 0)) .into(holder.imageViewImage);
         Picasso.get().load(currentItem.getLogo()).into(holder.imageViewLogo);
         holder.textViewTitle.setText(currentItem.getTitle());
         holder.textViewDescription.setText(currentItem.getDescription());
