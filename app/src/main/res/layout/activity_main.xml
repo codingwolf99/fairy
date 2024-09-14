@@ -15,6 +15,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="56dp"
         android:text="Fairy sayings"
+        android:textColor="@color/black"
         android:textSize="20dp"
         android:textStyle="bold" />
 
@@ -23,6 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:textSize="14dp"
+        android:textColor="#666"
         android:layout_marginTop="4dp"
         android:text="Let me guess..." />
 

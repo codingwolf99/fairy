@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         cardAdapter = new CardAdapter(this, null);
         recyclerView.setAdapter(cardAdapter);
-        recyclerView.addItemDecoration(new SpacesItemDecoration(30));
+        recyclerView.addItemDecoration(new SpacesItemDecoration((int) getResources().getDimension(R.dimen.list_gap)));
         NetHelper.getInstance(this).runGetRequest(new NetCallback() {
             @Override
             public void onResponse(DataResponse response) {
