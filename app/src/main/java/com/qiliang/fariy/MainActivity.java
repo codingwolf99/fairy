@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(com.qiliang.fariy.R.layout.activity_main);
        recyclerView = findViewById(R.id.recycle_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        cardAdapter = new CardAdapter(null);
+        cardAdapter = new CardAdapter(this,null);
         recyclerView.setAdapter(cardAdapter);
         NetHelper.getInstance(this).runGetRequest(new NetCallback() {
            @Override
