@@ -4,14 +4,16 @@ import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+import android.support.annotation.NonNull;
+import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.RecyclerView;
+
 
 import com.qiliang.fariy.R;
 import com.qiliang.fariy.model.DataItem;
@@ -53,6 +55,7 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.CardViewHolder
             intent.setPackage("com.android.chrome");
             context.startActivity(intent);
         } catch (ActivityNotFoundException e) {
+            Log.e("hkc_test", "jumpH5: ", e);
             // 如果没有安装 Chrome 浏览器，使用默认浏览器打开链接
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
             context.startActivity(intent);

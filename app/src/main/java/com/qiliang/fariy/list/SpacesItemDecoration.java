@@ -1,10 +1,11 @@
 package com.qiliang.fariy.list;
 
 import android.graphics.Rect;
+import android.support.annotation.NonNull;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
-import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.RecyclerView;
+
 
 public class SpacesItemDecoration extends RecyclerView.ItemDecoration {
     private final int space ;

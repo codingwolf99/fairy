@@ -1,18 +1,17 @@
 package com.qiliang.fariy;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.os.Bundle;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 
 import com.qiliang.fariy.callback.NetCallback;
 import com.qiliang.fariy.list.CardAdapter;
 import com.qiliang.fariy.list.SpacesItemDecoration;
 import com.qiliang.fariy.model.DataResponse;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
     private RecyclerView recyclerView;
     private CardAdapter cardAdapter;
 
@@ -33,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-//        Picasso.get().load(imageUrl).into(imageView);
-
     }
+
 }

@@ -76,7 +76,6 @@ public class NetHelper {
                 if (response.isSuccessful()) {
                     // 请求成功，处理响应
                     final String responseData = response.body().string();
-                    Log.d("hkc_test", "onResponse: "+responseData);
                     Gson gson = new Gson();
                     Type responseType = new TypeToken<DataResponse>() {}.getType();
                     final DataResponse res = gson.fromJson(responseData, responseType);
