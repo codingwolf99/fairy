@@ -10,7 +10,7 @@ android {
         applicationId "com.qiliang.fariy"
         minSdk 24
         targetSdk 34
-        versionCode 35
+        versionCode 41
         versionName "2"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
